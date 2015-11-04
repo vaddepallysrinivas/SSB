@@ -1,0 +1,58 @@
+﻿<!--<div class="row">
+ 
+    
+    <a ui-sref="page2" class="btn btn-info" href="/" role="button">Send Sms</a>
+   
+
+</div>-->
+
+<div class="panel panel-primary">
+    <div class="panel-heading">UpLoad conatacts</div>
+    <div class="panel-body">
+
+        <div>
+
+            <div class="col-sm-3">
+
+                <span class="label label-danger">Select Sms Type </span>
+                <br />
+                <select name="smsType" class="form-control" ng-change="vm.smsTypeChange()"
+                    ng-model="vm.smsType"
+                    ng-options="objLst.id as objLst.name for objLst in  vm.model.smsTypes">
+                    <!--ng-options="objLst.committeRoleId as objLst.name for objLst in vm.model.CommitteRoleList">-->
+                    <option value="">----Select----</option>
+
+                </select>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+        <br />
+        <hr />
+        <div class="col-sm-12" ng-show="vm.smsType>0">
+            <button type="button" class="btn btn-success" ng-click="vm.reset()">Clear</button>
+            <button type="button" class="btn btn-success" ng-click="vm.view()">View</button>
+            <br />
+            <div id="pendindContactsGrid" ui-grid="vm.gridOptions" ui-grid-resize-columns ui-grid-auto-resize ui-grid-selection class="grid">
+                <!-- <div id ="pendindContactsGrid" ui-grid="vm.gridOptions" class="grid">-->
+                <div class="grid-msg-overlay" ng-show="!vm.gridOptions.data.length">
+                    <div class="msg">
+                        <div class="center">
+                            <span class="muted">Select Spreadsheet File</span>
+                            <br />
+                            <input type="file" accept=".xls,.xlsx,.ods" fileread="" opts="vm.gridOptions" multiple="false" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

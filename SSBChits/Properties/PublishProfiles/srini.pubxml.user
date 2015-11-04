@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Srini\Desktop\ssb</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="app/app.js">
+      <publishTime>10/30/2015 16:01:52</publishTime>
+    </File>
+    <File Include="app/appRoute.js">
+      <publishTime>11/01/2015 12:35:36</publishTime>
+    </File>
+    <File Include="app/directives/fileread.js">
+      <publishTime>10/30/2015 16:01:52</publishTime>
+    </File>
+    <File Include="app/login/login.html">
+      <publishTime>11/01/2015 12:45:03</publishTime>
+    </File>
+    <File Include="app/login/login.js">
+      <publishTime>11/01/2015 12:38:59</publishTime>
+    </File>
+    <File Include="app/sms/index.js">
+      <publishTime>10/31/2015 13:02:57</publishTime>
+    </File>
+    <File Include="app/sms/Index1.html">
+      <publishTime>10/31/2015 12:42:51</publishTime>
+    </File>
+    <File Include="app/sms/sendSms.html">
+      <publishTime>10/31/2015 12:58:21</publishTime>
+    </File>
+    <File Include="app/sms/sendSms.js">
+      <publishTime>10/31/2015 06:37:29</publishTime>
+    </File>
+    <File Include="app/sms/viewSms.html">
+      <publishTime>10/31/2015 12:38:46</publishTime>
+    </File>
+    <File Include="app/sms/viewSms.js">
+      <publishTime>10/31/2015 12:42:11</publishTime>
+    </File>
+    <File Include="app/sms/viewSmsService.js">
+      <publishTime>10/31/2015 06:16:10</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>10/30/2015 16:00:34</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>11/04/2015 10:56:13</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>11/04/2015 10:56:13</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>10/30/2015 15:56:19</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/31/2015 04:41:30</publishTime>
+    </File>
+    <File Include="bin/SSBChits.dll">
+      <publishTime>11/04/2015 10:50:07</publishTime>
+    </File>
+    <File Include="bin/System.ComponentModel.DataAnnotations.dll">
+      <publishTime>07/09/2012 00:40:08</publishTime>
+    </File>
+    <File Include="bin/System.Configuration.dll">
+      <publishTime>07/09/2012 00:40:08</publishTime>
+    </File>
+    <File Include="bin/System.Data.DataSetExtensions.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Data.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Drawing.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.EnterpriseServices.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>10/31/2015 04:41:31</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.ApplicationServices.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.DynamicData.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Entity.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Extensions.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>10/30/2015 15:56:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>10/31/2015 04:41:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>10/31/2015 04:41:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>10/30/2015 15:56:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>10/30/2015 16:00:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>10/30/2015 15:56:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Services.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>10/30/2015 15:56:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>10/30/2015 15:56:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>10/30/2015 15:56:19</publishTime>
+    </File>
+    <File Include="bin/System.Xml.Linq.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>10/30/2015 16:00:34</publishTime>
+    </File>
+    <File Include="content/angular-material-grey-theme.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/angular-material.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/angular-material.min.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/angular-ui-switch.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/app.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/bootstrap-combined.min.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/bootstrap-datetimepicker.min.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap-theme.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap-theme.css.map">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap-theme.min.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap.css.map">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap.min.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/chosen.min.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/custom-theme.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/filesUploaded/temp.txt">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/gridXL/gridXL.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/Images/background.jpg">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/Images/bcd-bg.png">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/Images/Bcd-logo.png">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/Images/chosen-sprite.png">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/Images/dot.png">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/Images/line-horizontal.gif">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/Images/line-vertical.gif">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/Images/loading.gif">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/Images/logo.jpg">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/Images/texture.png">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/Images/top.jpg">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/isteven-multi-select.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/kendo/kendo.common.core.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/kendo/kendo.common.core.min.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/kendo/kendo.uniform.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/kendo/kendo.uniform.min.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/kendo/Uniform/editor.png">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/kendo/Uniform/imagebrowser.png">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/kendo/Uniform/indeterminate.gif">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/kendo/Uniform/loading-image.gif">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/kendo/Uniform/loading.gif">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/kendo/Uniform/loading_2x.gif">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/kendo/Uniform/slider-h.gif">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/kendo/Uniform/slider-v.gif">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/kendo/Uniform/sprite.png">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/kendo/Uniform/sprite_2x.png">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/kendo/Uniform/sprite_kpi.png">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/kendo/Uniform/sprite_kpi_2x.png">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/ngProgress.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/Site.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/toastr.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/ui-grid/ui-grid.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/ui-grid/ui-grid.eot">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/ui-grid/ui-grid.min.css">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/ui-grid/ui-grid.svg">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/ui-grid/ui-grid.ttf">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="content/ui-grid/ui-grid.woff">
+      <publishTime>10/30/2015 16:02:37</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>10/30/2015 15:57:40</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>10/30/2015 15:57:40</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>10/30/2015 15:57:40</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>10/30/2015 15:57:40</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/30/2015 15:56:16</publishTime>
+    </File>
+    <File Include="images/01.jpg">
+      <publishTime>10/30/2015 16:27:02</publishTime>
+    </File>
+    <File Include="images/02.jpg">
+      <publishTime>10/30/2015 16:27:02</publishTime>
+    </File>
+    <File Include="images/03.jpg">
+      <publishTime>10/30/2015 16:27:02</publishTime>
+    </File>
+    <File Include="images/04.jpg">
+      <publishTime>10/30/2015 16:27:03</publishTime>
+    </File>
+    <File Include="images/a17.png">
+      <publishTime>10/30/2015 16:27:03</publishTime>
+    </File>
+    <File Include="images/arrow.png">
+      <publishTime>10/30/2015 16:27:03</publishTime>
+    </File>
+    <File Include="images/img_chania.jpg">
+      <publishTime>10/30/2015 16:27:03</publishTime>
+    </File>
+    <File Include="images/img_chania2.jpg">
+      <publishTime>10/30/2015 16:27:03</publishTime>
+    </File>
+    <File Include="images/img_flower.jpg">
+      <publishTime>10/30/2015 16:27:03</publishTime>
+    </File>
+    <File Include="images/img_flower2.jpg">
+      <publishTime>10/30/2015 16:27:03</publishTime>
+    </File>
+    <File Include="images/loading.gif">
+      <publishTime>10/30/2015 16:27:03</publishTime>
+    </File>
+    <File Include="images/success.jpg">
+      <publishTime>10/31/2015 12:33:23</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/03/2015 12:40:08</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>11/04/2015 10:56:03</publishTime>
+    </File>
+    <File Include="scripts/angular-chosen.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/angular/angular-animate.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/angular-animate.min.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/angular-aria.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/angular-aria.min.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/angular-file-upload-shim.min.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/angular-file-upload.min.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/angular-material.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/angular-material.min.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/angular-messages.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/angular-sanitize.min.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/angular-touch.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/angular-ui-router.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/angular-ui-switch.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/angular.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/angular.min.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/dialogs.min.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/hammer.js">
+      <publishTime>10/30/2015 16:04:33</publishTime>
+    </File>
+    <File Include="scripts/angular/hammer.min.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/angular/isteven-multi-select.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/angular/ngProgress.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/bootstrap-datetimepicker.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/bootstrap-datetimepicker.min.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/bootstrap.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/chosen.jquery.min.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/jquery.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/kendo/kendo.angular.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/kendo/kendo.angular.min.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/kendo/kendo.autocomplete.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/kendo/kendo.autocomplete.min.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/kendo/kendo.menu.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/kendo/kendo.menu.min.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/kendo/kendo.ui.core.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/kendo/kendo.ui.core.min.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/kendo/kendo.window.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/kendo/kendo.window.min.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/moment.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/scripts.rar">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/toastr.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/ui-bootstrap-tpls-0.11.2.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/ui-grid.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/ui-grid.min.js">
+      <publishTime>10/30/2015 16:04:34</publishTime>
+    </File>
+    <File Include="scripts/xl/ods.js">
+      <publishTime>10/31/2015 11:28:50</publishTime>
+    </File>
+    <File Include="scripts/xl/xlsx.full.min.js">
+      <publishTime>10/31/2015 11:28:26</publishTime>
+    </File>
+    <File Include="Views/Login/Index.cshtml">
+      <publishTime>11/01/2015 12:33:36</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>11/03/2015 11:31:33</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/04/2015 10:55:40</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
