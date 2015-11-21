@@ -15,7 +15,7 @@ namespace SSBChits.Controllers.Api.ssb
         [HttpPost]
         public int SendSms([FromBody] SmsList objParam)
         {
-
+            int name = objParam.smsType;
             List<Sms> smsLst = objParam.lst;
 
             foreach (Sms l in smsLst)
@@ -31,6 +31,22 @@ namespace SSBChits.Controllers.Api.ssb
                 }
             }
             return 1;
+        }
+
+
+
+
+        [Route("autheniticate")]
+        [HttpPost]
+        public int Autheniticate([FromBody] Login objParam)
+        {
+            if (objParam.userName == "Srilaxmi" && objParam.Password == "12345")
+            {
+                return 1;
+            }
+
+            return 0;
+
         }
     }
 }

@@ -137,15 +137,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\admin\admin.html" />
     <Content Include="app\app.js" />
     <Content Include="app\appRoute.js" />
     <Content Include="app\directives\fileread.js" />
     <Content Include="app\login\login.html" />
     <Content Include="app\login\login.js" />
+    <Content Include="app\login\loginService.js" />
+    <Content Include="app\sms\bulkAction.html" />
+    <Content Include="app\sms\bulkAction.js" />
+    <Content Include="app\sms\bulkPramotinal.html" />
+    <Content Include="app\sms\bulkPramotinal.js" />
     <Content Include="app\sms\index.js" />
     <Content Include="app\sms\Index1.html" />
     <Content Include="app\sms\sendSms.html" />
     <Content Include="app\sms\sendSms.js" />
+    <Content Include="app\sms\bulkTransactinal.html" />
+    <Content Include="app\sms\bulkTransactinal.js" />
     <Content Include="app\sms\viewSms.html" />
     <Content Include="app\sms\viewSms.js" />
     <Content Include="app\sms\viewSmsService.js" />
@@ -212,18 +220,32 @@
     <Content Include="content\ui-grid\ui-grid.svg" />
     <Content Include="content\ui-grid\ui-grid.ttf" />
     <Content Include="content\ui-grid\ui-grid.woff" />
-    <Content Include="images\01.jpg" />
-    <Content Include="images\02.jpg" />
-    <Content Include="images\03.jpg" />
-    <Content Include="images\04.jpg" />
-    <Content Include="images\a17.png" />
-    <Content Include="images\arrow.png" />
+    <Content Include="images\10.jpg" />
+    <Content Include="images\11.jpg" />
+    <Content Include="images\12.jpg" />
+    <Content Include="images\13.jpg" />
+    <Content Include="images\14.jpg" />
+    <Content Include="images\15.jpg" />
+    <Content Include="images\16.jpg" />
+    <Content Include="images\17.jpg" />
+    <Content Include="images\18.jpg" />
+    <Content Include="images\19.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\6.jpg" />
+    <Content Include="images\7.jpg" />
+    <Content Include="images\8.jpg" />
+    <Content Include="images\9.jpg" />
+    <Content Include="images\images.jpg" />
+    <Content Include="images\left.jpg" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\p1.jpg" />
+    <Content Include="images\p2.jpg" />
+    <Content Include="images\p3.jpg" />
+    <Content Include="images\p4.jpg" />
+    <Content Include="images\right.jpg" />
     <Content Include="images\success.jpg" />
-    <Content Include="images\img_chania.jpg" />
-    <Content Include="images\img_chania2.jpg" />
-    <Content Include="images\img_flower.jpg" />
-    <Content Include="images\img_flower2.jpg" />
-    <Content Include="images\loading.gif" />
     <Content Include="scripts\angular-chosen.js" />
     <Content Include="scripts\angular\angular-animate.js" />
     <Content Include="scripts\angular\angular-animate.min.js" />
@@ -276,7 +298,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\Api\ssb\SmsModuleController.cs" />
+    <Compile Include="Controllers\api\SmsModuleController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

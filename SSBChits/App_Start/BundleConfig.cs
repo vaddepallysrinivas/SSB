@@ -48,8 +48,8 @@ namespace SSBChits
                     .Include("~/scripts/angular/angular-touch.js")
                     .Include("~/scripts/chosen.jquery.min.js")
                     .Include("~/scripts/angular-chosen.js")
-                    .Include("~/scripts/xl/xlsx.full.min")
-                    .Include("~/scripts/xl/ods.js")
+                  // .Include("~/scripts/xl/xlsx.full.min")
+                   // .Include("~/scripts/xl/ods.js")
                 );
 
 

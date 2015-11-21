@@ -8,17 +8,17 @@ function index($state, $scope, uiGridConstants, $modal) {
 
     var vm = {
         model: {},
-        opemModel: opemModel
+        openModel: openModel
 
     };
  
 
     return vm;
-    function opemModel() {
+    function openModel() {
         var modelInstance = $modal.open({
 
-            templateUrl: "app/sms/sendSms.html",
-            controller: "sendSms",
+            templateUrl: "app/login/login.html",
+            controller: "login",
             controllerAs: "vm",
             size: 'lg',
             backdrop: 'static',

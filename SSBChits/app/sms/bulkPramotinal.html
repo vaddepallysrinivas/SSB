@@ -1,0 +1,27 @@
+﻿<div class="panel panel-primary">
+    <div class="panel-heading">Send Bulk Pramotional SMS</div>
+    <div class="panel-body">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-success" ng-click="vm.reset()">Clear</button>
+                <button type="button" class="btn btn-success" ng-click="vm.view()">View</button>
+                <br />
+                <div ui-grid="vm.gridOptions" ui-grid-resize-columns ui-grid-auto-resize ui-grid-selection class="customGrid">
+                    <!-- <div id ="pendindContactsGrid" ui-grid="vm.gridOptions" class="grid">-->
+                    <div class="grid-msg-overlay" ng-show="!vm.gridOptions.data.length">
+                        <div class="msg">
+                            <div class="center">
+                                <span class="muted">Select Spreadsheet File</span>
+                                <br />
+                                <input type="file" accept=".xls,.xlsx,.ods" fileread="" opts="vm.gridOptions" multiple="false" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
