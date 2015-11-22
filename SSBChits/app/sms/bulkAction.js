@@ -127,7 +127,7 @@ function bulkAction($state, $scope, uiGridConstants, $modal) {
 
         paramsData = messageSelected1();
 
-        var params = { paramsData: paramsData ,smsType=1};
+        var params = { paramsData: paramsData ,smsType:1};
 
 
 

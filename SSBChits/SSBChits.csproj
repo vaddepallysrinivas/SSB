@@ -141,6 +141,7 @@
     <Content Include="app\app.js" />
     <Content Include="app\appRoute.js" />
     <Content Include="app\directives\fileread.js" />
+    <Content Include="app\directives\numbersOnly.js" />
     <Content Include="app\login\login.html" />
     <Content Include="app\login\login.js" />
     <Content Include="app\login\loginService.js" />
@@ -154,6 +155,8 @@
     <Content Include="app\sms\sendSms.js" />
     <Content Include="app\sms\bulkTransactinal.html" />
     <Content Include="app\sms\bulkTransactinal.js" />
+    <Content Include="app\sms\singlePramotional.html" />
+    <Content Include="app\sms\singlePramotional.js" />
     <Content Include="app\sms\viewSms.html" />
     <Content Include="app\sms\viewSms.js" />
     <Content Include="app\sms\viewSmsService.js" />
@@ -240,6 +243,7 @@
     <Content Include="images\images.jpg" />
     <Content Include="images\left.jpg" />
     <Content Include="images\logo.gif" />
+    <Content Include="images\new.gif" />
     <Content Include="images\p1.jpg" />
     <Content Include="images\p2.jpg" />
     <Content Include="images\p3.jpg" />

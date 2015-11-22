@@ -49,6 +49,12 @@ function appRoute($stateProvider, $urlRouterProvider, $locationProvider) {
         templateUrl: "app/sms/bulkPramotinal.html",
         controller: "bulkPramotinal",
         controllerAs: "vm"
+    })
+    .state("admin.singlePramotional", {
+        url: "/singlePramotional",
+        templateUrl: "app/sms/singlePramotional.html",
+        controller: "singlePramotional",
+        controllerAs: "vm"
     });
     
     //committees bulkTransactinal

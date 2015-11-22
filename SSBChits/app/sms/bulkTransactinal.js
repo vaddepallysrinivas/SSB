@@ -78,7 +78,7 @@ function bulkTransactinal($state, $scope, uiGridConstants, $modal) {
 
         paramsData = messageSelected2();
 
-        var params = { paramsData: paramsData};
+        var params = { paramsData: paramsData, smsType: 1 };
 
 
 
@@ -94,7 +94,7 @@ function bulkTransactinal($state, $scope, uiGridConstants, $modal) {
                 keyboard: false,
                 resolve: {
                     params: function () {
-                        return paramsData;
+                        return params;
                     }
                 }
             });
