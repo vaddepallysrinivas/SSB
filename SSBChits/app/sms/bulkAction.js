@@ -14,6 +14,7 @@ function bulkAction($state, $scope, uiGridConstants, $modal) {
         view: view,
         message1: message1,
         message2: message2,
+        messageSelected1:messageSelected1,
         getGridColumns: getGridColumns
     };
     vm.gridOptions = {};
@@ -45,17 +46,27 @@ function bulkAction($state, $scope, uiGridConstants, $modal) {
             var field4 = '';
             var field5 = '';
             var field6 = '';
+            //if (angular.isUndefined(row.entity.Installment) || row.entity.Installment == 0) {
+            //    field2 = 'Previous';
 
+            //}
+            //else {
+            //    field2 = 'Present Inst.(' + row.entity.Installment + ')';
+            //}
 
             field1 = '(' + selectedRows[i].GroupName + ')';
             field2 = ''
-            if (selectedRows[i].Installment == 'undefined' && (selectedRows[i].Installment.length > 1)) {
-                // if (selectedRows[i].Installment.length > 1) {
-                field2 = 'Present Inst.(' + selectedRows[i].Installment + ')';
+            if (angular.isUndefined(selectedRows[i].Installment) || selectedRows[i].Installment == 0)
 
+
+
+            {
+                // if (selectedRows[i].Installment.length > 1) {
+               
+                field2 = 'Previous';
             }
             else {
-                field2 = 'Previous';
+                field2 = 'Present Inst.(' + selectedRows[i].Installment + ')';
             }
 
             field3 = selectedRows[i].Amount + '/-'
@@ -78,41 +89,6 @@ function bulkAction($state, $scope, uiGridConstants, $modal) {
     }
 
 
-
-
-
-    function messageSelected2() {
-
-        var selectedRows = vm.model.gridApi.selection.getSelectedRows();
-        var paramsData = [];
-
-        for (var i = 0; i < selectedRows.length; i++) {
-
-            var message = ''
-            var field1 = 'Rs.' + selectedRows[i].Amount + '/-';
-            var field2 = selectedRows[i].DueDate;
-            var field3 = selectedRows[i].TransactionNo;
-            var field4 = selectedRows[i].Phnumber;
-            var field5 = selectedRows[i].Name;
-
-
-
-
-            //Dear Subscriber, Received #field1# On #field2# vide T.R.No.#field3#, by Cash.SREELAXMI SAI BAALAJI CHITS.KNR
-            message = "Dear Subscriber, Received " + field1 + " On " + field2 + " vide T.R.No." + field3 + ", by Cash.SREELAXMI SAI BAALAJI CHITS.KNR";
-
-            var param = {
-                Phnumber: field4,
-                Name: field5,
-                Message: message
-            }
-            paramsData.push(param);
-
-        }
-
-
-        return paramsData;
-    }
 
 
 
@@ -155,11 +131,12 @@ function bulkAction($state, $scope, uiGridConstants, $modal) {
         var field1 = '(' + row.entity.GroupName + ')';
         var field2 = ''
 
-        if (row.entity.Installment == 'undefined' && row.entity.Installment.length > 1) {
-            field2 = 'Present Inst.(' + row.entity.Installment + ')';
+        if (angular.isUndefined(row.entity.Installment) || row.entity.Installment == 0) {
+            field2 = 'Previous';
+           
         }
         else {
-            field2 = 'Previous';
+            field2 = 'Present Inst.(' + row.entity.Installment + ')';
         }
 
         var field3 = 'Rs.' + row.entity.Amount + '/-'

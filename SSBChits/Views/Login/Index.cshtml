@@ -2,7 +2,6 @@
 <html ng-app="ssb">
 <head>
     <title>SREE LAXMI SAI BAALAJI CHITS</title>
-    @*    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">*@
 
     @Styles.Render("~/content/css")
     <style>
@@ -222,8 +221,13 @@
 
 
     @Scripts.Render("~/scripts/lib")
+
+    <script src="~/scripts/xl/ods.js"></script>
+    <script src="~/scripts/xl/xlsx.full.min.js"></script>
+
     @Scripts.Render("~/scripts/app")
-    <script src="https://cdn.rawgit.com/SheetJS/js-xlsx/v0.8.0/dist/xlsx.full.min.js"></script>
-    <script src="https://cdn.rawgit.com/SheetJS/js-xlsx/v0.8.0/dist/ods.js"></script>
+
+   @* <script src="https://cdn.rawgit.com/SheetJS/js-xlsx/v0.8.0/dist/xlsx.full.min.js"></script>
+    <script src="https://cdn.rawgit.com/SheetJS/js-xlsx/v0.8.0/dist/ods.js"></script>*@
 </body>
 </html>
