@@ -1,11 +1,11 @@
 ﻿<div class="panel panel-primary">
     <div class="panel-heading">View Contacts</div>
     <div class="panel-body">
-        <div id="pendindContactsGrid" ui-grid="vm.gridViewSms" ui-grid-resize-columns ui-grid-auto-resize ui-grid-selection class="grid">
+        <div ui-grid="vm.gridViewSms" ui-grid-resize-columns ui-grid-auto-resize ui-grid-selection class="customGrid">
         </div>
         <hr />
         <div ng-show="vm.model.buttonsShow">
-            <button type="button" class="btn btn-success" ng-click="vm.sendSms()">SendSMS</button>
+            <button type="button" class="btn btn-success"  ng-click="vm.sendSms()">SendSms</button>
             <button type="button" class="btn btn-danger" ng-click="vm.close()">Close</button>
             <span class="label label-success" ng-show="vm.model.progressBarValue>=100"><img src="../../images/success.jpg"  width="50" height="50"/>SMS Sent Successfully........</span> 
         </div>

@@ -25,9 +25,40 @@ function appRoute($stateProvider, $urlRouterProvider, $locationProvider) {
     templateUrl: "app/login/login.html",
     controller: "login",
     controllerAs: "vm"
-});
-    //committees
-   // $locationProvider.html5Mode(true);
+})
+    .state("admin", {
+        url: "/admin",
+        templateUrl: "app/admin/admin.html"
+        // controller: "login",
+        // controllerAs: "vm"
+    })
+    .state("admin.bulkAction", {
+        url: "/bulkAction",
+        templateUrl: "app/sms/bulkAction.html",
+        controller: "bulkAction",
+        controllerAs: "vm"
+    })
+     .state("admin.bulkTransactinal", {
+         url: "/bulkTransactinal",
+         templateUrl: "app/sms/bulkTransactinal.html",
+         controller: "bulkTransactinal",
+         controllerAs: "vm"
+     })
+    .state("admin.bulkPramotinal", {
+        url: "/bulkPramotinal",
+        templateUrl: "app/sms/bulkPramotinal.html",
+        controller: "bulkPramotinal",
+        controllerAs: "vm"
+    })
+    .state("admin.singlePramotional", {
+        url: "/singlePramotional",
+        templateUrl: "app/sms/singlePramotional.html",
+        controller: "singlePramotional",
+        controllerAs: "vm"
+    });
+    
+    //committees bulkTransactinal
+    // $locationProvider.html5Mode(true);
 
     //$urlRouterProvider.when('', '/')
     // $urlRouterProvider.when(window.virtualDirectory + '/', $state.go("dashboard"));

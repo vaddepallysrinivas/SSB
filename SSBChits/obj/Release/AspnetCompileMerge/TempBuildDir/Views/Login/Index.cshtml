@@ -1,8 +1,7 @@
 ﻿@using System.Web.Optimization
 <html ng-app="ssb">
 <head>
-    <title>Example of Bootstrap 3 Responsive Navbar</title>
-    @*    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">*@
+    <title>SREE LAXMI SAI BAALAJI CHITS</title>
 
     @Styles.Render("~/content/css")
     <style>
@@ -29,54 +28,69 @@
 <body>
     <div class="container" ng-controller="index as vm">
 
-        <div align="center">
-           
-            <h1><font color="red"><b>SREELAXMI SAI BAALAJI CHITS</font></b></h1>
-            <hr />
+
+
+        <div class="row">
+
+            <div class="col-sm-1">
+                <img src="~/images/left.jpg" height="75" width="80" />
+            </div>
+            <div class="col-sm-10">
+
+                <img src="~/images/logo.gif" width="100%" height="10%" />
+                <hr />
+
+            </div>
+
+            <div class="col-sm-1">
+                <img src="~/images/right.jpg" height="75" width="80" />
+            </div>
         </div>
 
-        <div>
-            <nav role="navigation" class="navbar navbar-inverse">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
 
-                </div>
-                <!-- Collection of nav links, forms, and other content for toggling -->
+        <div class="row">
+            <div>
+                <nav role="navigation" class="navbar navbar-inverse">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                    <!-- Collection of nav links, forms, and other content for toggling -->
 
 
-                <div id="navbarCollapse" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a ui-sref="page1" href="/">Home</a></li>
-                        <li><a href="#">Profile</a></li>
-                        <li class="dropdown">
-                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Messages <b class="caret"></b></a>
-                            <ul role="menu" class="dropdown-menu">
-                                <li><a href="#">Inbox</a></li>
-                                <li><a href="#">Drafts</a></li>
-                                <li><a href="#">Sent Items</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Trash</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form role="search" class="navbar-form navbar-left">
-                        <div class="form-group">
-                            <input type="text" placeholder="Search" class="form-control">
-                        </div>
-                    </form>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a ui-sref="login" href="/">Login</a></li>
-                    </ul>
-                </div>
-            </nav>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a ui-sref="page1" href="/">Home</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">Achivements <b class="caret"></b></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">chitGroups</a></li>
+                                    <li><a href="#">actioned chits</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">sms fecilty</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form role="search" class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search" class="form-control">
+                            </div>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a ui-sref="login" href="/">Login</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
-
         <div class="row">
             <div class="col-sm-6">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -91,19 +105,58 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <img src="~/images/img_chania.jpg" alt="Chania" width="460" height="345">
+                            <img src="~/images/3.jpg" alt="Chania" width="460" height="345">
                         </div>
 
                         <div class="item">
-                            <img src="~/images/img_chania2.jpg" alt="Chania" width="460" height="345">
+                            <img src="~/images/4.jpg" alt="Chania" width="460" height="345">
                         </div>
 
                         <div class="item">
-                            <img src="~/images/img_flower.jpg" alt="Flower" width="460" height="345">
+                            <img src="~/images/5.jpg" alt="Flower" width="460" height="345">
                         </div>
 
                         <div class="item">
-                            <img src="~/images/img_flower2.jpg" alt="Flower" width="460" height="345">
+                            <img src="~/images/6.jpg" alt="Flower" width="460" height="345">
+                        </div>
+                          <div class="item">
+                            <img src="~/images/7.jpg" alt="Flower" width="460" height="345">
+                        </div>
+                          <div class="item">
+                            <img src="~/images/8.jpg" alt="Flower" width="460" height="345">
+                        </div>
+                          <div class="item">
+                            <img src="~/images/9.jpg" alt="Flower" width="460" height="345">
+                        </div>
+                          <div class="item">
+                            <img src="~/images/10.jpg" alt="Flower" width="460" height="345">
+                        </div>
+                          <div class="item">
+                            <img src="~/images/11.jpg" alt="Flower" width="460" height="345">
+                        </div>
+                          <div class="item">
+                            <img src="~/images/12.jpg" alt="Flower" width="460" height="345">
+                        </div>
+                          <div class="item">
+                            <img src="~/images/3.jpg" alt="Flower" width="460" height="345">
+                        </div>
+                          <div class="item">
+                            <img src="~/images/14.jpg" alt="Flower" width="460" height="345">
+                        </div>
+                          <div class="item">
+                            <img src="~/images/15.jpg" alt="Flower" width="460" height="345">
+                        </div>
+                         <div class="item">
+                            <img src="~/images/16.jpg" alt="Flower" width="460" height="345">
+                        </div>
+                         <div class="item">
+                            <img src="~/images/17.jpg" alt="Flower" width="460" height="345">
+                        </div>
+                         <div class="item">
+                            <img src="~/images/18.jpg" alt="Flower" width="460" height="345">
+                        </div>
+                         <div class="item">
+                            <img src="~/images/19.jpg" alt="Flower" width="460" height="345">
                         </div>
                     </div>
 
@@ -133,11 +186,11 @@
                             <ul>
                                
 
-                                <li><b>25th Anniversary day of our new chit group</b></li>
-                                <li><b>From Oct Onwards new chit is adding</b></li>
-                                <li><b>Joain in 233 days pragram</b></li>
-                                <li><b>WELCOME to chits</b></li>
-                             <li><b>firt time in karimnagar</b></li>
+                                <li><b>25th Anniversary day of our new chit group</b><img src="/images/new.gif" /></li>
+                                <li><b>From Oct Onwards new chit is adding</b><img src="/images/new.gif" /></li>
+                                <li><b>Join in 233 days program</b></li>
+                                <li><b>WELCOME to SSB LIFE Chits program</b></li>
+                             <li><b>Best beliable chit in karimnagar</b></li>
                             </ul>
                                 </marquee>
                         </div>
@@ -150,7 +203,7 @@
         </div>
 
 
-       
+
         <hr />
         <div class="row">
             <div ui-view=""></div>
@@ -163,13 +216,18 @@
             <p>Contact information: <a href="mailto:someone@example.com">shankarnishani@ssbshits.com</a>.</p>
         </footer>
 
-      <hr />
+        <hr />
     </div>
-    
+
 
     @Scripts.Render("~/scripts/lib")
+
+    <script src="~/scripts/xl/ods.js"></script>
+    <script src="~/scripts/xl/xlsx.full.min.js"></script>
+
     @Scripts.Render("~/scripts/app")
-    <script src="https://cdn.rawgit.com/SheetJS/js-xlsx/v0.8.0/dist/xlsx.full.min.js"></script>
-    <script src="https://cdn.rawgit.com/SheetJS/js-xlsx/v0.8.0/dist/ods.js"></script>
+
+   @* <script src="https://cdn.rawgit.com/SheetJS/js-xlsx/v0.8.0/dist/xlsx.full.min.js"></script>
+    <script src="https://cdn.rawgit.com/SheetJS/js-xlsx/v0.8.0/dist/ods.js"></script>*@
 </body>
 </html>

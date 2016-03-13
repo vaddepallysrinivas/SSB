@@ -1,0 +1,73 @@
+﻿
+@model SSBChits.Models.LoginModel
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login</title>
+    @System.Web.Optimization.Styles.Render("~/content/css")
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @*@Html.AntiForgeryToken()*@
+
+
+
+        <div class="panel panel-default">
+
+            <div class="panel-heading">
+                <h4 class="panel-title">BCD Login</h4>
+            </div>
+
+            <div class="panel-body">
+
+                <div class="row">
+
+                    <div class="col-md-offset-4 col-sm-offset-6 col-md-8 col-sm-6">
+                        <div class="form-horizontal">
+
+                            <div class="form-group">                               
+
+                                <label class="control-label col-md-2" for="UserName">User Name</label>
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.userName)
+                                    @Html.ValidationMessageFor(model => model.userName)
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+
+                                <label class="control-label col-md-2" for="UserPassword">Password</label>
+                                <div class="col-md-10">
+                                    @Html.PasswordFor(model => model.Password)
+                                    @Html.ValidationMessageFor(model => model.Password)
+                                </div>
+                            </div>
+
+                            <div class="form-group form-group-sm">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Login" class="btn btn-primary " />
+                                </div><br />
+                                <div class="col-md-offset-1 col-md-10">
+                                    <br />
+                                    <label class="text-danger">@Html.ValidationSummary()</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    }
+   @System.Web.Optimization.Scripts.Render("~/scripts/lib")
+
+    <script src="~/scripts/xl/ods.js"></script>
+    <script src="~/scripts/xl/xlsx.full.min.js"></script>
+
+    @System.Web.Optimization.Scripts.Render("~/scripts/app")
+</body>
+</html>

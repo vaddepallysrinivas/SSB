@@ -1,9 +1,9 @@
 ﻿'use strict';
 
-angular.module('ssb').controller('sendSms', sendSms);
-sendSms.$inject = ['$state', '$scope', 'uiGridConstants', '$modal'];
+angular.module('ssb').controller('bulkAction', bulkAction);
+bulkAction.$inject = ['$state', '$scope', 'uiGridConstants', '$modal'];
 
-function sendSms($state, $scope, uiGridConstants, $modal) {
+function bulkAction($state, $scope, uiGridConstants, $modal) {
 
 
     var vm = {
@@ -14,7 +14,8 @@ function sendSms($state, $scope, uiGridConstants, $modal) {
         view: view,
         message1: message1,
         message2: message2,
-        smsTypeChange: smsTypeChange
+        messageSelected1:messageSelected1,
+        getGridColumns: getGridColumns
     };
     vm.gridOptions = {};
 
@@ -45,17 +46,27 @@ function sendSms($state, $scope, uiGridConstants, $modal) {
             var field4 = '';
             var field5 = '';
             var field6 = '';
+            //if (angular.isUndefined(row.entity.Installment) || row.entity.Installment == 0) {
+            //    field2 = 'Previous';
 
+            //}
+            //else {
+            //    field2 = 'Present Inst.(' + row.entity.Installment + ')';
+            //}
 
             field1 = '(' + selectedRows[i].GroupName + ')';
             field2 = ''
-            if (selectedRows[i].Installment == 'undefined' && (selectedRows[i].Installment.length > 1)) {
-                // if (selectedRows[i].Installment.length > 1) {
-                field2 = 'Present Inst.(' + selectedRows[i].Installment + ')';
+            if (angular.isUndefined(selectedRows[i].Installment) || selectedRows[i].Installment == 0)
 
+
+
+            {
+                // if (selectedRows[i].Installment.length > 1) {
+               
+                field2 = 'Previous';
             }
             else {
-                field2 = 'Previous';
+                field2 = 'Present Inst.(' + selectedRows[i].Installment + ')';
             }
 
             field3 = selectedRows[i].Amount + '/-'
@@ -81,41 +92,6 @@ function sendSms($state, $scope, uiGridConstants, $modal) {
 
 
 
-    function messageSelected2() {
-
-        var selectedRows = vm.model.gridApi.selection.getSelectedRows();
-        var paramsData = [];
-
-        for (var i = 0; i < selectedRows.length; i++) {
-
-            var message = ''
-            var field1 = 'Rs.' + selectedRows[i].Amount + '/-';
-            var field2 = selectedRows[i].DueDate;
-            var field3 = selectedRows[i].TransactionNo;
-            var field4 = selectedRows[i].Phnumber;
-            var field5 = selectedRows[i].Name;
-
-
-
-
-            //Dear Subscriber, Received #field1# On #field2# vide T.R.No.#field3#, by Cash.SREELAXMI SAI BAALAJI CHITS.KNR
-            message = "Dear Subscriber, Received " + field1 + " On " + field2 + " vide T.R.No." + field3 + ", by Cash.SREELAXMI SAI BAALAJI CHITS.KNR";
-
-            var param = {
-                Phnumber: field4,
-                Name: field5,
-                Message: message
-            }
-            paramsData.push(param);
-
-        }
-
-
-        return paramsData;
-    }
-
-
-
 
 
 
@@ -124,12 +100,11 @@ function sendSms($state, $scope, uiGridConstants, $modal) {
 
         var paramsData = [];
 
-        if (vm.smsType == 1) {
-            paramsData = messageSelected1();
-        }
-        else if (vm.smsType == 2) {
-            paramsData = messageSelected2();
-        }
+
+        paramsData = messageSelected1();
+
+        var params = { paramsData: paramsData ,smsType:1};
+
 
 
         var roleModalInstance;
@@ -144,7 +119,7 @@ function sendSms($state, $scope, uiGridConstants, $modal) {
                 keyboard: false,
                 resolve: {
                     params: function () {
-                        return paramsData;
+                        return params;
                     }
                 }
             });
@@ -156,11 +131,12 @@ function sendSms($state, $scope, uiGridConstants, $modal) {
         var field1 = '(' + row.entity.GroupName + ')';
         var field2 = ''
 
-        if (row.entity.Installment == 'undefined' && row.entity.Installment.length > 1) {
-            field2 = 'Present Inst.(' + row.entity.Installment + ')';
+        if (angular.isUndefined(row.entity.Installment) || row.entity.Installment == 0) {
+            field2 = 'Previous';
+           
         }
         else {
-            field2 = 'Previous';
+            field2 = 'Present Inst.(' + row.entity.Installment + ')';
         }
 
         var field3 = 'Rs.' + row.entity.Amount + '/-'
@@ -197,9 +173,8 @@ function sendSms($state, $scope, uiGridConstants, $modal) {
 
     function init() {
 
-
-        vm.model.smsTypes = [{ id: '1', name: 'SmsAction' }, { id: '2', name: 'SmsTransaction' }];
         reset();
+        getGridColumns();
         vm.gridOptions = {
             enableColumnResizing: true,
             enableHorizontalScrollbar: uiGridConstants.scrollbars.WHEN_NEEDED,
@@ -207,57 +182,38 @@ function sendSms($state, $scope, uiGridConstants, $modal) {
             enableRowSelection: true,
             enableFiltering: true,
             enableSelectAll: true,
-            selectionRowHeaderWidth: 35,
+            //selectionRowHeaderWidth: 35,
             rowHeight: 35,
             showGridFooter: true,
             onRegisterApi: function (gridApi) {
                 vm.model.gridApi = gridApi;
                 vm.model.gridApi.selection.on.rowSelectionChanged($scope, bindRowData);
             },
-            columnDefs: []
+            columnDefs: vm.gridOptions.columnDefs
         }
 
 
 
     }
 
-    function smsTypeChange() {
+    function getGridColumns() {
         vm.model.columms = [];
-        // vm.gridOptions = {};
-        //vm.gridOption.data = {};
         reset();
+        vm.model.columms = [
+           {
+               name: 'Phnumber', displayName: "Phnumber", enableCellEdit: true, cellTooltip: function (row, col) { return vm.message1(row, col) }
 
-        // $scope.$apply(function () {
-        if (vm.smsType == 1) {
-            vm.model.columms = [
-               {
-                   name: 'Phnumber', displayName: "Phnumber", enableCellEdit: true, cellTooltip: function (row, col) { return vm.message1(row, col) }
-
-               },
-               { name: 'Name', displayName: "Name", cellTooltip: function (row, col) { return vm.message1(row, col) } },
-               { name: 'GroupName', displayName: "GroupName", cellTooltip: function (row, col) { return vm.message1(row, col) } },
-               { name: 'Installment', displayName: "Installment", cellTooltip: function (row, col) { return vm.message1(row, col) } },
-               { name: 'Amount', displayName: "Amount", cellTooltip: function (row, col) { return vm.message1(row, col) } },
-               { name: 'DueDate', displayName: "DueDate", cellTooltip: function (row, col) { return vm.message1(row, col) } }
-            ]
+           },
+           { name: 'Name', displayName: "Name", cellTooltip: function (row, col) { return vm.message1(row, col) } },
+           { name: 'GroupName', displayName: "GroupName", cellTooltip: function (row, col) { return vm.message1(row, col) } },
+           { name: 'Installment', displayName: "Installment", cellTooltip: function (row, col) { return vm.message1(row, col) } },
+           { name: 'Amount', displayName: "Amount", cellTooltip: function (row, col) { return vm.message1(row, col) } },
+           { name: 'DueDate', displayName: "DueDate", cellTooltip: function (row, col) { return vm.message1(row, col) } }
+        ]
 
 
 
-        }
-        else if (vm.smsType == 2) {
 
-            vm.model.columms = [
-               {
-                   name: 'Phnumber', displayName: "Phnumber", enableCellEdit: true, cellTooltip: function (row, col) { return vm.message2(row, col) }
-
-               },
-               { name: 'Name', displayName: "Name", cellTooltip: function (row, col) { return vm.message2(row, col) } },
-                { name: 'Amount', displayName: "Amount", cellTooltip: function (row, col) { return vm.message2(row, col) } },
-               { name: 'TransactionNo', displayName: "TransactionNo", cellTooltip: function (row, col) { return vm.message2(row, col) } },
-
-               { name: 'DueDate', displayName: "DueDate", cellTooltip: function (row, col) { return vm.message2(row, col) } }
-            ]
-        }
 
         vm.gridOptions.columnDefs = vm.model.columms;
 

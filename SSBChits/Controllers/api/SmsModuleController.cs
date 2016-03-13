@@ -44,7 +44,7 @@ namespace SSBChits.Controllers.Api.ssb
 
         [Route("autheniticate")]
         [HttpPost]
-        public int Autheniticate([FromBody] Login objParam)
+        public int Autheniticate([FromBody] LoginModel objParam)
         {
             if (objParam.userName == "Srilaxmi" && objParam.Password == "12345")
             {

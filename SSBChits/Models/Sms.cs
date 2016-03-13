@@ -20,7 +20,7 @@ namespace SSBChits.Models
         public string Message { set; get; }
     }
 
-    public class Login
+    public class LoginModel
     {
         public string userName { set; get; }
         public string Password { set; get; }

@@ -9,38 +9,71 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <_PublishTargetUrl>C:\Users\Srini\Desktop\ssb</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="app/admin/admin.html">
+      <publishTime>11/21/2015 15:56:32</publishTime>
+    </File>
     <File Include="app/app.js">
       <publishTime>10/30/2015 16:01:52</publishTime>
     </File>
     <File Include="app/appRoute.js">
-      <publishTime>11/01/2015 12:35:36</publishTime>
+      <publishTime>11/21/2015 15:55:36</publishTime>
     </File>
     <File Include="app/directives/fileread.js">
-      <publishTime>10/30/2015 16:01:52</publishTime>
+      <publishTime>11/21/2015 12:40:10</publishTime>
+    </File>
+    <File Include="app/directives/numbersOnly.js">
+      <publishTime>11/21/2015 16:06:29</publishTime>
     </File>
     <File Include="app/login/login.html">
-      <publishTime>11/01/2015 12:45:03</publishTime>
+      <publishTime>11/24/2015 10:32:01</publishTime>
     </File>
     <File Include="app/login/login.js">
-      <publishTime>11/01/2015 12:38:59</publishTime>
+      <publishTime>11/21/2015 12:03:14</publishTime>
+    </File>
+    <File Include="app/login/loginService.js">
+      <publishTime>11/21/2015 11:42:40</publishTime>
+    </File>
+    <File Include="app/sms/bulkAction.html">
+      <publishTime>11/21/2015 12:49:52</publishTime>
+    </File>
+    <File Include="app/sms/bulkAction.js">
+      <publishTime>12/10/2015 10:00:10</publishTime>
+    </File>
+    <File Include="app/sms/bulkPramotinal.html">
+      <publishTime>11/21/2015 13:49:38</publishTime>
+    </File>
+    <File Include="app/sms/bulkPramotinal.js">
+      <publishTime>11/21/2015 15:31:10</publishTime>
+    </File>
+    <File Include="app/sms/bulkTransactinal.html">
+      <publishTime>11/21/2015 13:59:26</publishTime>
+    </File>
+    <File Include="app/sms/bulkTransactinal.js">
+      <publishTime>12/10/2015 10:00:54</publishTime>
     </File>
     <File Include="app/sms/index.js">
-      <publishTime>10/31/2015 13:02:57</publishTime>
+      <publishTime>11/21/2015 11:32:08</publishTime>
     </File>
     <File Include="app/sms/Index1.html">
-      <publishTime>10/31/2015 12:42:51</publishTime>
+      <publishTime>11/21/2015 11:31:00</publishTime>
     </File>
     <File Include="app/sms/sendSms.html">
       <publishTime>10/31/2015 12:58:21</publishTime>
     </File>
     <File Include="app/sms/sendSms.js">
-      <publishTime>10/31/2015 06:37:29</publishTime>
+      <publishTime>11/21/2015 14:18:32</publishTime>
+    </File>
+    <File Include="app/sms/singlePramotional.html">
+      <publishTime>11/21/2015 16:07:03</publishTime>
+    </File>
+    <File Include="app/sms/singlePramotional.js">
+      <publishTime>11/21/2015 16:08:56</publishTime>
     </File>
     <File Include="app/sms/viewSms.html">
-      <publishTime>10/31/2015 12:38:46</publishTime>
+      <publishTime>12/09/2015 10:41:02</publishTime>
     </File>
     <File Include="app/sms/viewSms.js">
-      <publishTime>10/31/2015 12:42:11</publishTime>
+      <publishTime>11/21/2015 15:10:32</publishTime>
     </File>
     <File Include="app/sms/viewSmsService.js">
       <publishTime>10/31/2015 06:16:10</publishTime>
@@ -49,10 +82,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/30/2015 16:00:34</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>11/04/2015 10:56:13</publishTime>
+      <publishTime>12/10/2015 10:06:23</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>11/04/2015 10:56:13</publishTime>
+      <publishTime>12/10/2015 10:06:23</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>10/30/2015 15:56:19</publishTime>
@@ -61,7 +94,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2015 04:41:30</publishTime>
     </File>
     <File Include="bin/SSBChits.dll">
-      <publishTime>11/04/2015 10:50:07</publishTime>
+      <publishTime>12/10/2015 09:46:31</publishTime>
     </File>
     <File Include="bin/System.ComponentModel.DataAnnotations.dll">
       <publishTime>07/09/2012 00:40:08</publishTime>
@@ -157,7 +190,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/30/2015 16:02:37</publishTime>
     </File>
     <File Include="content/app.css">
-      <publishTime>10/30/2015 16:02:37</publishTime>
+      <publishTime>11/21/2015 12:48:52</publishTime>
     </File>
     <File Include="content/bootstrap-combined.min.css">
       <publishTime>10/30/2015 16:02:37</publishTime>
@@ -345,11 +378,65 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="images/04.jpg">
       <publishTime>10/30/2015 16:27:03</publishTime>
     </File>
+    <File Include="images/10.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/11.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/12.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/13.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/14.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/15.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/16.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/17.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/18.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/19.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/3.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/4.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/5.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/6.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/7.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/8.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/9.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
     <File Include="images/a17.png">
       <publishTime>10/30/2015 16:27:03</publishTime>
     </File>
     <File Include="images/arrow.png">
       <publishTime>10/30/2015 16:27:03</publishTime>
+    </File>
+    <File Include="images/images.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
     </File>
     <File Include="images/img_chania.jpg">
       <publishTime>10/30/2015 16:27:03</publishTime>
@@ -363,8 +450,32 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="images/img_flower2.jpg">
       <publishTime>10/30/2015 16:27:03</publishTime>
     </File>
+    <File Include="images/left.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
     <File Include="images/loading.gif">
       <publishTime>10/30/2015 16:27:03</publishTime>
+    </File>
+    <File Include="images/logo.gif">
+      <publishTime>11/21/2015 22:47:10</publishTime>
+    </File>
+    <File Include="images/new.gif">
+      <publishTime>11/21/2015 16:13:05</publishTime>
+    </File>
+    <File Include="images/p1.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/p2.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
+    </File>
+    <File Include="images/p3.jpg">
+      <publishTime>11/21/2015 23:15:06</publishTime>
+    </File>
+    <File Include="images/p4.jpg">
+      <publishTime>11/21/2015 23:15:06</publishTime>
+    </File>
+    <File Include="images/right.jpg">
+      <publishTime>11/21/2015 23:15:07</publishTime>
     </File>
     <File Include="images/success.jpg">
       <publishTime>10/31/2015 12:33:23</publishTime>
@@ -373,7 +484,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/03/2015 12:40:08</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>11/04/2015 10:56:03</publishTime>
+      <publishTime>12/10/2015 10:06:20</publishTime>
     </File>
     <File Include="scripts/angular-chosen.js">
       <publishTime>10/30/2015 16:04:34</publishTime>
@@ -502,19 +613,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/30/2015 16:04:34</publishTime>
     </File>
     <File Include="scripts/xl/ods.js">
-      <publishTime>10/31/2015 11:28:50</publishTime>
+      <publishTime>12/10/2015 09:39:19</publishTime>
     </File>
     <File Include="scripts/xl/xlsx.full.min.js">
-      <publishTime>10/31/2015 11:28:26</publishTime>
+      <publishTime>12/10/2015 09:38:32</publishTime>
     </File>
     <File Include="Views/Login/Index.cshtml">
-      <publishTime>11/01/2015 12:33:36</publishTime>
+      <publishTime>12/10/2015 09:44:40</publishTime>
     </File>
     <File Include="Views/web.config">
       <publishTime>11/03/2015 11:31:33</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/04/2015 10:55:40</publishTime>
+      <publishTime>11/21/2015 16:24:55</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -38,7 +38,7 @@ function viewSms($state, $scope, uiGridConstants, params, $modalInstance, viewSm
             ]
 
         }
-        vm.gridViewSms.data = params;
+        vm.gridViewSms.data = params.paramsData;
     }
 
 
@@ -48,17 +48,31 @@ function viewSms($state, $scope, uiGridConstants, params, $modalInstance, viewSm
         $modalInstance.dismiss();
     }
 
-    function sendSms()
-    {
-       
-        vm.model.progressBarValue = 0;
-   
 
+    
+        function sendSms()
+        {
+           
             vm.model.buttonsShow = false;
+
+            vm.model.progressBarValue = 0;
+   
+            for (var i = vm.model.progressBarValue; i <= 20; i++) {
+                vm.model.progressBarValue = i;
+            }
+           
+            for (var i = vm.model.progressBarValue; i <= 40; i++) {
+                vm.model.progressBarValue = i;
+            }
             for (var i = vm.model.progressBarValue; i <= 60; i++) {
                 vm.model.progressBarValue = i;
             }
-            var objParam = { lst: params }
+
+
+
+            var objParam = { lst: params.paramsData, smsType: params.smsType }
+
+
             viewSmsService.sendSms(objParam).then(function (res) {
                 if (res.data == 1) {
 
@@ -66,21 +80,21 @@ function viewSms($state, $scope, uiGridConstants, params, $modalInstance, viewSm
                         vm.model.progressBarValue = i;
                       
                     }
-                 //   vm.model.progressBarValue="SMS Sent SuccessFully......"
+                    //   vm.model.progressBarValue="SMS Sent SuccessFully......"
                     vm.model.buttonsShow = true;
                 }
 
             });
         
         
-    }
-
-    function increment(k) {
-
-        for (var i = vm.model.progressBarValue; i <= 100; i++) {
-            vm.model.progressBarValue = i;
         }
-    }
 
-}
+        function increment(k) {
+
+            for (var i = vm.model.progressBarValue; i <= 100; i++) {
+                vm.model.progressBarValue = i;
+            }
+        }
+
+    }
 
