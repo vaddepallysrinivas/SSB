@@ -26,4 +26,6 @@ namespace SSBChits.Models
         public string Password { set; get; }
         
     }
+
+
 }

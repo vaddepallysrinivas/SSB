@@ -1,6 +1,8 @@
 ﻿'use strict';
 
 angular.module('ssb').controller('bulkAction', bulkAction);
+
+
 bulkAction.$inject = ['$state', '$scope', 'uiGridConstants', '$modal'];
 
 function bulkAction($state, $scope, uiGridConstants, $modal) {

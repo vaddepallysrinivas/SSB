@@ -17,7 +17,8 @@ namespace SSBChits
             WebApiConfig.Register(GlobalConfiguration.Configuration);         
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            GlobalConfiguration.Configuration.EnsureInitialized(); 
+            GlobalConfiguration.Configuration.EnsureInitialized();
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
         }
     }
 }

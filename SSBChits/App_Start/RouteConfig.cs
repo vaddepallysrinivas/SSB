@@ -12,6 +12,24 @@ namespace SSBChits
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.MapMvcAttributeRoutes();
+          
+            routes.MapRoute(
+                "login",
+                "Account/Login",
+                new { controller = "Account", action = "Login" }
+            );
+            routes.MapRoute(
+                "logout",
+                "Account/Logout",
+                new { controller = "Account", action = "Logout" }
+            );
+
+            //routes.MapRoute(
+            //    "default",
+            //    "{*url}",
+            //    new { controller = "Home", action = "Index" }
+            //);
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
